@@ -1,0 +1,46 @@
+/* База */
+
+$white-color: #ffffff;
+
+/* Задники */
+$hero-bg-color: #c4c4c4;
+$important-background-color: #2f303a;
+$odd-section-background-color: #f5f4fa;
+$inactive-background-color: #f5f4fa;
+$main-bg-color: $white-color;
+
+/* Лого */
+$logo-bottom: $white-color;
+$logo-top: #000000;
+$logo-color: #2196f3;
+
+$icon-inactive: #afb1b8;
+
+/* Текст */
+$main-text-color: #212121;
+$regular-text-color: #757575;
+
+$footer-link-color: rgba(255, 255, 255, 0.6);
+$header-link-color: #212121;
+
+$pointer: #2196f3;
+
+/* Значки */
+
+$social-links-footer: $white-color;
+$social-links-pointer: $white-color;
+
+$common-font-size: 16px;
+
+$worklist-image-size: 370px;
+$advantages-icon-size: 70px;
+$letter-spreding-for-headers: 0.06em;
+$standard-width: 270px;
+$standard-margin: 30px;
+$margin-header: 50px;
+$vertical-distance: 94px;
+$common-margin-top: 50px;
+$site-width: 1200px;
+
+$standard-reaction-time: 250ms;
+$standard-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
