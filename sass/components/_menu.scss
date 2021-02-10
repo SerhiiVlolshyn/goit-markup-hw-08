@@ -7,7 +7,7 @@
 
   @include centring-x;
 
-  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 500ms cubic-bezier(0.8, 0, 0.2, 1);
 
   @media screen and (min-width: $tablet-width) {
     display: none;
@@ -15,7 +15,7 @@
 }
 
 .is-upped {
-  top: -141%;
+  top: -200%;
 }
 
 .nav-menu {
