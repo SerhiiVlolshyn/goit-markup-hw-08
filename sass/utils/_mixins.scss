@@ -15,7 +15,6 @@
 
 @mixin centring-x() {
   left: 50%;
-  right: 50%;
   transform: translateX(-50%);
 }
 
