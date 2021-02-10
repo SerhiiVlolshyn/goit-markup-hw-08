@@ -10,6 +10,11 @@
   letter-spacing: 0.03em;
 
   padding: 16px 0;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .footer-logo {

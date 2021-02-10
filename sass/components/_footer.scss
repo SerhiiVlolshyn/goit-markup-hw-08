@@ -5,6 +5,14 @@ footer {
   padding: 60px 0;
   text-align: center;
 
+  .address-and-social {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      display: flex;
+      padding-left: 61px;
+      padding-right: 74px;
+    }
+  }
+
   address {
     letter-spacing: 0.03em;
     font-weight: 400;
@@ -25,6 +33,10 @@ footer {
 
 .footer-contacts {
   margin-bottom: $vertical-distance;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 0;
+  }
 
   li + li {
     margin-top: 8px;
@@ -66,6 +78,10 @@ footer {
 }
 
 .footer-social {
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: 5px;
+
   .social-icon-item {
     width: 20px;
     height: 20px;
@@ -90,7 +106,7 @@ footer {
 
 .subscription-form {
   top: -2px;
-  width: 100%;
+  width: $footer-input-width;
   padding: 16px 16px;
   margin: 0;
   background-color: $important-background-color;
@@ -107,6 +123,11 @@ footer {
     display: flex;
     align-items: center;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+    margin: 20px auto;
   }
 }
 

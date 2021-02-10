@@ -39,14 +39,14 @@
             </nav>
             <ul class="list header-element contacts-header-element not-for-mobile">
                 <!--строка контактов-->
-                <li class="header-element header-mail"><a class="contacts-link header-element header-link"
-                        href="mailto:info@devstudio.com"><svg class="header-contacts-icon">
+                <li class="header-element header-mail"><a class="contacts-header-element contacts-header-element-top"
+                        href="mailto:info@devstudio.com"><svg class="header-contacts-icon-mail">
                             <use href="./images/symbol-defs.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a></li>
-                <li class="header-element header-tel"><a class="contacts-link header-element header-link"
-                        href="tel:+380961111111"><svg class="header-contacts-icon">
+                <li class="header-element header-tel"><a class="contacts-header-element contacts-header-element-bot"
+                        href="tel:+380961111111"><svg class="header-contacts-icon-tel">
                             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                        </svg>+38096 111 11 11</a></li>
+                        </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -64,7 +64,7 @@
     <section> 
     <div class="container advantages">
             <h2 class="hidden">Преимущества</h2>
-        <ul class="list">
+        <ul class="list advantages-list">
             <li class="advantages-list-item">
                 <div class="advantages-box">
                     <svg class="advantages-icon">
@@ -96,7 +96,7 @@
     </div>
     </section> 
     <!-- Конец второго блока начало третьего -->
-    <section class="abought-work  not-for-mobile">
+    <section class="abought-work  for-desktop">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <div class="worklist-container">
         <ul class="list work-list">
@@ -304,46 +304,48 @@
     <!-- Подвал -->
     <footer>
         <div class="container">
-            <div class="footer-contacts">
-                <a href="./" class="footer-logo">Web<span class="logobot">Studio</span></a>
-                <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
-                <ul class="footer-contacts list">
-                    <li><a href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h3 class="footer-header">присоединяйтесь</h3>
-                <ul class="list social-nets-logos">
-                    <li>
-                        <a class="footer-instagram social-icon" href="./">
-                            <svg class="social-icon-item">
-                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer-twitter social-icon" href="./">
-                            <svg class="social-icon-item">
-                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer-facebook social-icon" href="./">
-                            <svg class="social-icon-item">
-                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer-linkedin social-icon" href="./">
-                            <svg class="social-icon-item">
-                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="address-and-social">
+                <div class="footer-contacts">
+                    <a href="./" class="footer-logo">Web<span class="logobot">Studio</span></a>
+                    <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
+                    <ul class="footer-contacts list">
+                        <li><a href="mailto:info@example.com">info@example.com</a></li>
+                        <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-header">присоединяйтесь</h3>
+                    <ul class="list social-nets-logos">
+                        <li>
+                            <a class="footer-instagram social-icon" href="./">
+                                <svg class="social-icon-item">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-twitter social-icon" href="./">
+                                <svg class="social-icon-item">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-facebook social-icon" href="./">
+                                <svg class="social-icon-item">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-linkedin social-icon" href="./">
+                                <svg class="social-icon-item">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-subscription">
                 <form name="subscription-form" autocomplete="on">

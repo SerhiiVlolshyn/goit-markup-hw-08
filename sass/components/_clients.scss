@@ -12,7 +12,7 @@
 }
 
 .client-list {
-  margin-top: $standard-margin;
+  margin-left: -30px;
 
   display: flex;
   flex-wrap: wrap;
@@ -31,6 +31,10 @@
 
     transition: color $standard-transition-options,
       border-color $standard-transition-options;
+
+    @media screen and (min-width: $tablet-width) {
+      width: $client-button-tablet-width;
+    }
   }
 
   .clients-link:visited {
@@ -41,12 +45,14 @@
     color: $pointer;
     border-color: $pointer;
   }
-  li:nth-child(2n-1) {
-    flex-basis: calc(100% / 2 + 15px);
-  }
+  li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
 
-  li:nth-child(n + 3) {
-    margin-top: $standard-margin;
+    @media screen and (min-width: $tablet-width) {
+      flex-basis: calc(100% / 3 - 30px);
+    }
   }
 }
 

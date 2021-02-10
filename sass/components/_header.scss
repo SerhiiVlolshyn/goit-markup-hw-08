@@ -2,11 +2,19 @@ header {
   position: relative;
   width: $mobile-width;
   @include centring-x;
+
+  @media screen and (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
 }
 
 .header-container {
   background-color: $main-bg-color;
   border: 1px solid $text-underline-color;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .header-menu {
@@ -24,6 +32,138 @@ header {
     right: -1px;
     width: 24px;
     height: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $pointer;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+nav {
+  font-weight: 500;
+  .current {
+    color: $pointer;
+  }
+  .current-page::after {
+    position: absolute;
+    bottom: -1px;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $logo-color;
+  }
+}
+
+.header-element-navigation-list {
+  margin-left: 88px;
+  li {
+    position: relative;
+  }
+}
+
+.header-link {
+  display: block;
+  font-weight: 500;
+  color: $main-text-color;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color $standard-transition-options;
+}
+
+.studio-link {
+  margin: auto 0;
+  margin-left: 0;
+}
+
+.portfolio-link {
+  margin: auto 0;
+  margin-left: $margin-header;
+}
+
+.contacts-link {
+  margin: auto 0;
+  margin-left: $margin-header;
+}
+
+.header-mail {
+  .header-link {
+    margin-top: auto;
+    margin-bottom: auto;
+    fill: $regular-text-color;
+
+    fill: currentColor;
+  }
+}
+
+.header-tel {
+  .header-link {
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    fill: $regular-text-color;
+
+    fill: currentColor;
+  }
+}
+
+.header-contacts-icon {
+  &-mail {
+    display: block;
+    height: 10px;
+    width: 14px;
+    margin: auto 8px;
+    margin-left: 0;
+
+    fill: currentColor;
+  }
+  &-tel {
+    display: block;
+    height: 15px;
+    width: 10px;
+    margin: auto 8px;
+    margin-left: 0;
+
+    fill: currentColor;
+  }
+}
+
+.contacts-header-element {
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+  }
+  margin-left: auto;
+  .contacts-header-element {
+    display: flex;
+
+    color: $regular-text-color;
+    text-decoration: none;
+
+    transition: color $standard-transition-options;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  li + li {
+    margin-top: 10px;
+  }
+
+  &-top {
+    padding-top: 21px;
+  }
+  &-bot {
+    padding-bottom: 19px;
   }
 
   &:hover,
