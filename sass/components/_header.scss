@@ -4,8 +4,12 @@ header {
 
   margin: 0 auto;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width),
+    screen and (max-width: $desktop-width) {
     width: $tablet-width;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 

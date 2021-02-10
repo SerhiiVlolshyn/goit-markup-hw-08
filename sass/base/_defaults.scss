@@ -27,8 +27,6 @@ img {
 }
 
 body {
-  //   background-color: $main-bg-color;
-  //   color: $main-text-color;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.2;
@@ -59,8 +57,12 @@ a:focus {
   padding-left: $common-site-horizontal-paddings;
   padding-right: $common-site-horizontal-paddings;
   margin: auto;
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width),
+    screen and (max-width: $desktop-width) {
     width: $tablet-width;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 
