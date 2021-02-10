@@ -15,13 +15,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
+    <!-- иконка для вызова меню -->
+    <button class="header-menu">
+        <svg class="header-menu-icon">
+            <use href="./images/symbol-defs.svg#icon-menu_button"></use>
+        </svg>
+    </button>
     <!--Начало шапки-->
     <header>
-        <div class="container header-element">
-            <nav class="header-element">
+        <div class="container header-container">
+            <a class="header-logo" href="./">Web<span class="logotop">Studio</span></a>
+            <nav class="header-navigation">
                 <!--Лого сайта-->
-                <a class="header-element logo" href="./">Web<span class="logotop">Studio</span></a>
-                <ul class="header-element navigation list header-element-navigation-list">
+                <ul class="header-element navigation list header-element-navigation-list not-for-mobile">
                     <!--Панель навигации-->
                     <li class="header-element studio-link current-page"><a class="header-element header-link current" href="./">Студия</a></li>
                     <li class="header-element portfolio-link"><a class="header-element header-link"
@@ -31,7 +37,7 @@
                     <!--Нужна ссылка/переделать на кнопку-->
                 </ul>
             </nav>
-            <ul class="list header-element contacts-header-element">
+            <ul class="list header-element contacts-header-element not-for-mobile">
                 <!--строка контактов-->
                 <li class="header-element header-mail"><a class="contacts-link header-element header-link"
                         href="mailto:info@devstudio.com"><svg class="header-contacts-icon">
@@ -48,49 +54,49 @@
 
     <main>
     <!--Перый блок-->
-    <section class="banner main-index-element banner-main-index-element">
-    <div class="container">
+    <section>
+    <div class="container banner">
             <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button primary" type="button" data-modal-open> Заказать услугу</button>
+        <button class="order-button" type="button" data-modal-open> Заказать услугу</button>
     </div>
     </section>
     <!-- конец первого блока начало второго-->
-    <section class="advantages main-index-element"> 
-        <div class="container">
+    <section> 
+    <div class="container advantages">
             <h2 class="hidden">Преимущества</h2>
-        <ul class="list advantages-list">
+        <ul class="list">
             <li class="advantages-list-item">
-                <div class="advantages-cutebox antenna">
+                <div class="advantages-box">
                     <svg class="advantages-icon">
                         <use href="./images/symbol-defs.svg#icon-antenna"></use>
                     </svg>
                 </div>
-                <h3>Внимание к деталям</h3><p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li><!--
-            --><li class="advantages-list-item clock">
-                <div class="advantages-cutebox">
+                <h3 class="advantages-list-header">Внимание к деталям</h3><p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li><!--
+            --><li class="advantages-list-item">
+                <div class="advantages-box">
                     <svg class="advantages-icon">
                     <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg></div>
-                <h3>Пунктуальность</h3><p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li><!--
-            --><li class="advantages-list-item diagram">
-                <div class="advantages-cutebox">
+                <h3 class="advantages-list-header">Пунктуальность</h3><p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li><!--
+            --><li class="advantages-list-item">
+                <div class="advantages-box">
                     <svg class="advantages-icon">
                         <use href="./images/symbol-defs.svg#icon-diagram"></use>
                     </svg>
                 </div>
-                <h3>Планирование</h3><p>Равным образом консультация с широким активом в значительной степени обуславливает.</p></li><!--
-            --><li class="advantages-list-item astronaut">
-                <div class="advantages-cutebox">
+                <h3 class="advantages-list-header">Планирование</h3><p>Равным образом консультация с широким активом в значительной степени обуславливает.</p></li><!--
+            --><li class="advantages-list-item">
+                <div class="advantages-box">
                     <svg class="advantages-icon">
                         <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                     </svg>
                 </div>
-                <h3>Современные технологии</h3><p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li><!--
+                <h3 class="advantages-list-header">Современные технологии</h3><p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li><!--
      --></ul>
     </div>
     </section> 
     <!-- Конец второго блока начало третьего -->
-    <section class="abought-work main-index-element">
+    <section class="abought-work  not-for-mobile">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <div class="worklist-container">
         <ul class="list work-list">
@@ -113,11 +119,11 @@
         </div>
     </section>
     <!-- Конец третьего блока, начало команды-->
-    <section class="team main-index-element">
-        <div class="container">
-        <h2 class="section-title our-team">Наша команда</h2>
+    <section>
+        <div class="container team">
+        <h2 class="section-team-title">Наша команда</h2>
         <ul class="list team-list">
-            <li class="team-member"><img src="./images/product-designer.jpg"
+            <li class="team-member"><img src="./images/demyanenko-ihor.jpg"
                     alt="Бородатый мужчина в очках в коричневой рубашке">
                 <div class="team-container">
                     <h3>Игорь Демьяненко</h3>
@@ -151,7 +157,7 @@
                     </div>
                 </div>
             </li>
-            <li class="team-member"><img src="./images/fe-dev.jpg" alt="Миловидная крашеная блондинка в прямоугольных очках">
+            <li class="team-member"><img src="./images/olha-repina.jpg" alt="Миловидная крашеная блондинка в прямоугольных очках">
                 <div class="team-container">
                     <h3>Ольга Репина</h3>
                     <p>Frontend Developer</p>
@@ -185,7 +191,7 @@
                     </div>
                 </div>
             </li>
-            <li class="team-member"><img src="./images/marketing.jpg"
+            <li class="team-member"><img src="./images/nikolay-tarasov.jpg"
                     alt="Молодой человек в рубашке и с хитрой улыбкой. Единственный из всех без очков">
                 <div class="team-container">
                     <h3>Николай Тарасов</h3>
@@ -220,7 +226,7 @@
                     </div>
                 </div>
             </li>
-            <li class="team-member"><img src="./images/ui-designer.jpg"
+            <li class="team-member"><img src="./images/mihail-ermakov.jpg"
                     alt="Молодой бородатый человек с неоднозначной улыбкой и в круглых очках">
                 <div class="team-container">
                     <h3>Михаил Ермаков</h3>
@@ -259,10 +265,9 @@
         </div>
     </section>
 
-    <section class="our-clients">
-        <h2 class="section-title">Постоянные клиенты</h2>
-
-        <div class="container">
+    <section>
+        <div class="container our-clients">
+            <h2 class="section-clients-title">Постоянные клиенты</h2>
             <ul class="list client-list">
                 <li class="client-one"> <a class="clients-link" href="./">
                     <svg class="client-icon">
@@ -299,8 +304,8 @@
     <!-- Подвал -->
     <footer>
         <div class="container">
-            <div class="footer-container">
-                <a href="./" class="logo">Web<span class="logobot">Studio</span></a>
+            <div class="footer-contacts">
+                <a href="./" class="footer-logo">Web<span class="logobot">Studio</span></a>
                 <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
                 <ul class="footer-contacts list">
                     <li><a href="mailto:info@example.com">info@example.com</a></li>
@@ -308,7 +313,7 @@
                 </ul>
             </div>
             <div class="footer-social">
-                <h3 class="footer-social-header">присоединяйтесь</h3>
+                <h3 class="footer-header">присоединяйтесь</h3>
                 <ul class="list social-nets-logos">
                     <li>
                         <a class="footer-instagram social-icon" href="./">
@@ -342,9 +347,9 @@
             </div>
             <div class="footer-subscription">
                 <form name="subscription-form" autocomplete="on">
-                    <span class="subscription-form-text">Подпишитесь на рассылку</span>
+                    <span class="footer-header">Подпишитесь на рассылку</span>
                     <label>
-                        <input type='email' name='email' placeholder="E-mail" />
+                        <input class="subscription-form" type='email' name='email' placeholder="E-mail" />
                     </label>
                         <button name="subscription" type="submit">Подписаться
                             <svg class="footer-send-icon">

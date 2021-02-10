@@ -1,0 +1,27 @@
+.header-container {
+  background-color: $main-bg-color;
+  border: 1px solid $text-underline-color;
+}
+
+.header-menu {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: 0;
+  background-color: $white-color;
+  fill: currentColor;
+  &-icon {
+    position: relative;
+    top: 5px;
+    right: -1px;
+    width: 24px;
+    height: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $pointer;
+  }
+}

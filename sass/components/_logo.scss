@@ -1,0 +1,33 @@
+.header-logo {
+  display: block;
+  text-decoration: none;
+  color: $logo-color;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  padding: 16px 0;
+}
+
+.footer-logo {
+  display: block;
+  text-decoration: none;
+  color: $logo-color;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
+}
+
+.logotop {
+  color: $logo-top;
+}
+
+.logobot {
+  color: $logo-bottom;
+}

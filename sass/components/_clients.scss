@@ -1,0 +1,81 @@
+.our-clients {
+  padding-top: $vertical-distance;
+  padding-bottom: $vertical-distance;
+}
+
+.section-clients-title {
+  font-weight: bold;
+  font-size: $team-title-font-size;
+  line-height: 33px;
+
+  text-align: center;
+}
+
+.client-list {
+  margin-top: $standard-margin;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .clients-link {
+    display: block;
+    width: $client-button-width;
+    height: 90px;
+    border: 1px solid $icon-inactive;
+    border-radius: $standard-border-radius;
+    fill: currentColor;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: color $standard-transition-options,
+      border-color $standard-transition-options;
+  }
+
+  .clients-link:visited {
+    color: $icon-inactive;
+  }
+  .clients-link:hover,
+  .clients-link:focus {
+    color: $pointer;
+    border-color: $pointer;
+  }
+  li:nth-child(2n-1) {
+    flex-basis: calc(100% / 2 + 15px);
+  }
+
+  li:nth-child(n + 3) {
+    margin-top: $standard-margin;
+  }
+}
+
+.client-one .client-icon {
+  width: 44.27px;
+  height: 90px;
+}
+
+.client-two .client-icon {
+  width: 40px;
+  height: 90px;
+}
+
+.client-three .client-icon {
+  width: 41px;
+  height: 90px;
+}
+
+.client-four .client-icon {
+  width: 79.66px;
+  height: 90px;
+}
+
+.client-five .client-icon {
+  width: 59px;
+  height: 90px;
+}
+
+.client-six .client-icon {
+  width: 88.48px;
+  height: 90px;
+}

@@ -1,0 +1,141 @@
+footer {
+  width: 100%;
+  background-color: $footer-bgc;
+  padding: 60px 0;
+  text-align: center;
+
+  address {
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    color: $address-footer-color;
+    font-style: normal;
+    line-height: 1.71;
+
+    margin-bottom: 7px;
+  }
+  a {
+    color: $footer-link-color;
+    text-decoration: none;
+    line-height: 1.71;
+
+    transition: color $standard-transition-options;
+  }
+}
+
+.footer-contacts {
+  margin-bottom: $vertical-distance;
+
+  li + li {
+    margin-top: 8px;
+  }
+}
+
+.footer-header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.social-nets-logos {
+  width: 206px;
+  display: flex;
+  margin: 20px auto 0 auto;
+  li {
+    margin-right: 10px;
+  }
+
+  .social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color $standard-transition-options;
+  }
+  .social-icon:hover,
+  .social-icon:focus {
+    background-color: $pointer;
+  }
+}
+
+.social-nets-logos li:last-child {
+  margin-right: 0;
+}
+
+.footer-social {
+  .social-icon-item {
+    width: 20px;
+    height: 20px;
+  }
+  .social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: $social-links-footer;
+  }
+}
+
+.footer-subscription {
+  margin-top: $vertical-distance;
+
+  .footer-header {
+    display: block;
+
+    margin-bottom: $footer-special-vertical-margin;
+  }
+}
+
+.subscription-form {
+  top: -2px;
+  width: 100%;
+  padding: 16px 16px;
+  margin: 0;
+  background-color: $important-background-color;
+
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+
+  margin-bottom: $footer-special-vertical-margin;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+button[name='subscription'] {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: $border-radius-for-button;
+  border: 0;
+  padding-right: 33px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $footer-subscribe-button-text-color;
+  background-color: $buttons-bg;
+
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-send-icon {
+  position: absolute;
+  right: 28px;
+  top: 13px;
+  width: 24px;
+  height: 24px;
+  fill: $white-color;
+}
