@@ -15,14 +15,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
-    <!-- иконка для вызова меню -->
-<button class="header-menu">
-    <svg class="header-menu-icon">
-        <use href="./images/symbol-defs.svg#icon-menu_button"></use>
-    </svg>
-</button>
     <!--Начало шапки-->
     <header>
+        <!-- иконка для вызова меню -->
+        <button class="header-menu" type="button" data-menu-open>
+            <svg class="header-menu-icon">
+                <use href="./images/symbol-defs.svg#icon-menu_button"></use>
+            </svg>
+        </button>
     <div class="container header-container">
         <a class="header-logo" href="./">Web<span class="logotop">Studio</span></a>
         <nav class="header-navigation">
@@ -158,21 +158,21 @@
     </footer>
     <!--Конец подвала-->
 
-    <!-- Меню тут -->
-    
-    <div class="nav-menu">
+<!-- Меню тут -->
+<div class="mob-position is-upped" data-menu>
+    <div class="nav-menu ">
         <button class="menu-close-button" data-menu-close>
             <svg class="menu-close-button-cros">
                 <use href="./images/symbol-defs.svg#icon-close-button"></use>
             </svg>
         </button>
-    
+
         <ul class="list drop-menu-site-nav">
             <li>
-                <a href="./" class="drop-menu-studio-link">Студия</a>
+                <a href="./" class="drop-menu-studio-link current">Студия</a>
             </li>
             <li>
-                <a href="./portfolio.html" class="drop-menu-protfolio-link current">Портфолио</a>
+                <a href="./portfolio.html" class="drop-menu-protfolio-link">Портфолио</a>
             </li>
             <li>
                 <a href="./" class="drop-menu-contacts-link">Контакты</a>
@@ -186,7 +186,7 @@
                 <a class="drop-menu-mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
         </ul>
-    
+
         <ul class="list drop-menu-site-social">
             <li>
                 <a href="./" class="instagram-menu-link">Instagram</a>
@@ -202,6 +202,8 @@
             </li>
         </ul>
     </div>
+</div>
 
+<script src="./js/menu.js"></script>
 </body>
 </html>

@@ -13,6 +13,11 @@
   transform: translateY(-50%);
 }
 
+@mixin centring-x() {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @mixin drop-moble-menu-text-regular-font-settings {
   display: block;
   font-weight: 500;

@@ -1,3 +1,9 @@
+header {
+  position: relative;
+  width: $mobile-width;
+  @include centring-x;
+}
+
 .header-container {
   background-color: $main-bg-color;
   border: 1px solid $text-underline-color;

@@ -1,7 +1,22 @@
+.mob-position {
+  position: absolute;
+  top: 0;
+
+  @include centring-x;
+
+  transition: $standard-transition-options;
+}
+
+.is-upped {
+  top: -101%;
+}
+
 .nav-menu {
   position: relative;
 
   padding: 48px 40px;
+
+  background-color: $main-bg-color;
 
   a {
     text-decoration: none;

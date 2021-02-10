@@ -15,14 +15,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
-    <!-- иконка для вызова меню -->
-    <button class="header-menu">
+    <!--Начало шапки-->
+    <header>
+        <!-- иконка для вызова меню -->
+    <button class="header-menu" type="button" data-menu-open>
         <svg class="header-menu-icon">
             <use href="./images/symbol-defs.svg#icon-menu_button"></use>
         </svg>
     </button>
-    <!--Начало шапки-->
-    <header>
         <div class="container header-container">
             <a class="header-logo" href="./">Web<span class="logotop">Studio</span></a>
             <nav class="header-navigation">
@@ -416,8 +416,8 @@
     </div>
 
     <!-- Меню тут -->
-
-    <div class="nav-menu">
+    <div class="mob-position is-upped" data-menu>
+    <div class="nav-menu ">
         <button class="menu-close-button" data-menu-close>
             <svg class="menu-close-button-cros">
                 <use href="./images/symbol-defs.svg#icon-close-button"></use>
@@ -459,9 +459,10 @@
             </li>
         </ul>
     </div>
-
+    </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 
 </body>
 </html>
