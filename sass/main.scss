@@ -1,4 +1,5 @@
 @import 'utils/variables';
+@import 'utils/mixins';
 @import 'base/defaults';
 @import 'components/logo';
 @import 'components/header';
@@ -8,3 +9,6 @@
 @import 'components/clients';
 @import 'components/footer';
 @import 'components/modal';
+@import 'components/menu';
+@import 'components/portfolio-filters';
+@import 'components/portfolio-inner';

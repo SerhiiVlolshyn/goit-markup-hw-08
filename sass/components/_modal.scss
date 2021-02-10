@@ -1,3 +1,9 @@
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -12,10 +18,12 @@
   transition: opacity $standard-transition-options;
 }
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+.modal-header {
+  color: $header-link-color;
+  font-weight: bold;
+  font-size: $modal-header-fomt-size;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .modal {
@@ -23,58 +31,59 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
+  width: $modal-width;
+  height: $modal-height;
 
-  padding: 40px;
+  padding: $modal-global-padding;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: $border-radius-for-modal;
   background-color: $main-bg-color;
 
   transform: translate(-50%, -50%);
   transition: transform $standard-transition-options,
     visibility $standard-transition-options;
-  .first-modal-header {
-    margin-top: 12px;
-  }
   .header-label {
     position: absolute;
     bottom: 44px;
-
-    font-weight: normal;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.2;
     letter-spacing: 0.01em;
     color: $regular-text-color;
   }
   input {
-    padding: 11px 42px;
-    width: 448px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    padding: $modal-input-padding;
+    width: $modal-input-width;
+    @include standard-border($modal-border-color);
+    border-radius: $border-radius-for-modal;
 
     transition: border $standard-transition-options;
   }
   textarea {
-    transition: border $standard-transition-options;
-  }
-  textarea {
-    width: 448px;
+    width: $modal-input-width;
     height: 120px;
-    padding: 11px 16px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: $modal-textarea-padding;
+    border-radius: $border-radius-for-modal;
+    @include standard-border($modal-border-color);
 
     resize: none;
+
+    transition: border $standard-transition-options;
+  }
+
+  input:focus {
+    @include standard-border($pointer);
+  }
+  input:hover {
+    @include standard-border($pointer);
   }
   textarea:hover {
-    border: 1px solid $pointer;
+    @include standard-border($pointer);
   }
 
   textarea:focus {
-    border: 1px solid $pointer;
+    @include standard-border($pointer);
   }
 
   textarea::placeholder {
@@ -82,13 +91,6 @@
     line-height: 14px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-  }
-
-  input:focus {
-    border: 1px solid $pointer;
-  }
-  input:hover {
-    border: 1px solid $pointer;
   }
 
   a,
@@ -101,13 +103,11 @@
   position: absolute;
   top: 8px;
   right: 8px;
-
   display: block;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: $white-color;
+
+  @include round-button-with-radius(30px);
+  @include standard-border(rgba(0, 0, 0, 0.1));
+  background-color: $main-bg-color;
 
   cursor: pointer;
 
@@ -127,21 +127,15 @@
   top: 1px;
 }
 
-.modal-header {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  color: $header-link-color;
-}
-
 .name-for-callback {
   margin-top: 30px;
-  + .tel-for-callback {
-    margin-top: 28px;
-  }
 }
-
+.tel-for-callback {
+  margin-top: 28px;
+}
+.email-for-callback {
+  margin-top: 28px;
+}
 .comment-for-callback {
   margin-top: 28px;
 }
@@ -149,8 +143,8 @@
 .modal-container {
   position: relative;
 
-  width: 448px;
-  height: 40px;
+  width: $modal-input-width;
+  height: $modal-input-height;
 
   fill: $header-link-color;
   fill: currentColor;
@@ -159,23 +153,17 @@
 .modal-container-comment {
   position: relative;
 
-  width: 448px;
-  height: 120px;
+  width: $modal-input-width;
+  height: calc($modal-input-height * 3);
 
   fill: $header-link-color;
   fill: currentColor;
 }
 
-.tel-for-callback + .email-for-callback {
-  margin-top: 28px;
-}
-
 .modal-person {
   position: absolute;
   left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-
+  @include centring-y;
   width: 12px;
   height: 12px;
 
@@ -187,9 +175,7 @@
 .modal-tel {
   position: absolute;
   left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-
+  @include centring-y;
   width: 13px;
   height: 13px;
 
@@ -201,9 +187,7 @@
 .modal-mail {
   position: absolute;
   left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-
+  @include centring-y;
   width: 15px;
   height: 12px;
 
@@ -230,21 +214,11 @@
   cursor: pointer;
 }
 
-.terms-of-use {
-  position: absolute;
-  top: 19px;
-  margin-left: 36px;
-  width: 400.18px;
-  font-size: 14px;
-  line-height: 1.71;
-  color: $regular-text-color;
-}
-
 .checkbox-visual::before {
   content: '';
   position: absolute;
-  top: 25px;
-  left: 13px;
+  top: 20px;
+  left: 0;
   width: 12px;
   height: 12px;
   box-shadow: 0 0 0 0.13em $main-text-color;
@@ -277,6 +251,16 @@
   background-image: url(../images/check.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.terms-of-use {
+  position: absolute;
+  top: 18px;
+  margin-left: 24px;
+  width: 346px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: $regular-text-color;
 }
 
 .modal-submit-btn {

@@ -1,0 +1,22 @@
+@mixin round-button-with-radius($round-button-radius) {
+  width: $round-button-radius;
+  height: $round-button-radius;
+  border-radius: 50%;
+}
+
+@mixin standard-border($standard-border-color) {
+  border: 1px solid $standard-border-color;
+}
+
+@mixin centring-y() {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin drop-moble-menu-text-regular-font-settings {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}

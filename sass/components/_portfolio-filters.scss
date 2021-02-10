@@ -1,0 +1,48 @@
+.portfolio-section {
+  padding: $vertical-distance 0;
+}
+
+.filters-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+
+  margin-left: -8px;
+  margin-top: -15px;
+  li {
+    margin-left: 8px;
+    margin-top: 15px;
+  }
+}
+
+.works-filter {
+  flex-wrap: nowrap;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: $common-font-size;
+  line-height: 1.62;
+
+  border-radius: $standard-border-radius;
+  border: 0;
+  padding: 6px 22px;
+  cursor: pointer;
+  background-color: $odd-section-background-color;
+
+  transition: background-color $standard-transition-options,
+    color $standard-transition-options, box-shadow $standard-transition-options;
+
+  &:hover,
+  &:focus {
+    background-color: $pointer;
+    color: $white-color;
+    border-radius: $border-radius-for-button;
+    border: 0;
+    padding: 6px 22px;
+    box-shadow: $filters-box-shadow;
+  }
+  &.checked {
+    background-color: $pointer;
+    color: $white-color;
+    box-shadow: $filters-box-shadow;
+  }
+}

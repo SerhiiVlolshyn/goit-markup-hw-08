@@ -93,6 +93,14 @@ button {
   text-align: center;
 }
 
+.checkbox-hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .not-for-mobile {
   display: none;
 }
