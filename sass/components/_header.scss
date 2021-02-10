@@ -1,7 +1,6 @@
 header {
   position: relative;
   width: $mobile-width;
-  @include centring-x;
 
   @media screen and (min-width: $tablet-width) {
     width: $tablet-width;
