@@ -101,3 +101,9 @@
   padding: 10px 32px;
   margin: $standard-margin auto 0 auto;
 }
+
+.container.banner {
+  @media screen and (min-width: $desktop-width) {
+    min-width: $desktop-width;
+  }
+}

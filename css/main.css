@@ -12,8 +12,8 @@ html {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -508,6 +508,12 @@ nav .current-page::after {
   margin: 30px auto 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .container.banner {
+    min-width: 1200px;
+  }
+}
+
 .advantages {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -526,7 +532,7 @@ nav .current-page::after {
   line-height: 1.71;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .advantages-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -544,10 +550,21 @@ nav .current-page::after {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .advantages-list .advantages-list-item {
     -ms-flex-preferred-size: calc(100% / 4 - 30px);
         flex-basis: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
