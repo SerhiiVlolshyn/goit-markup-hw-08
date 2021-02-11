@@ -183,33 +183,6 @@ button.inactive {
 
 header {
   position: relative;
-  width: 480px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
-  header {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  header {
-    width: 1200px;
-  }
-}
-
-.header-container {
-  background-color: #ffffff;
-  border: 1px solid #ececec;
-}
-
-@media screen and (min-width: 768px) {
-  .header-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 .header-menu {
@@ -238,6 +211,36 @@ header {
 @media screen and (min-width: 768px) {
   .header-menu {
     display: none;
+  }
+}
+
+.header-container {
+  width: 480px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+  .header-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    width: 1200px;
+  }
+}
+
+.header-container {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1022,7 +1025,7 @@ footer a {
   margin-left: 93px;
 }
 
-.footer-subscription .footer-header {
+.footer-header {
   display: block;
   text-align: start;
 }
