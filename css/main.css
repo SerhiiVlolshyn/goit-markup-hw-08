@@ -789,6 +789,13 @@ nav .current-page::after {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .our-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section-clients-title {
   font-weight: bold;
   font-size: 28px;
@@ -963,6 +970,7 @@ footer a {
 
 @media screen and (min-width: 1200px) {
   .footer-contacts {
+    margin-bottom: 0;
     text-align: start;
   }
 }

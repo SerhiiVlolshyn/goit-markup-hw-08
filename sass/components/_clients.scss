@@ -1,6 +1,10 @@
 .our-clients {
   padding-top: $vertical-distance;
   padding-bottom: $vertical-distance;
+  @media screen and (min-width: $desktop-width) {
+    padding-top: $desktop-paddings;
+    padding-bottom: $desktop-paddings;
+  }
 }
 
 .section-clients-title {
