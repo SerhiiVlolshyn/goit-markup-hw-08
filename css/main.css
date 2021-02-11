@@ -926,6 +926,9 @@ footer {
 
 @media screen and (min-width: 1200px) {
   footer .address-and-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding-right: 0;
     padding-left: 0;
   }
