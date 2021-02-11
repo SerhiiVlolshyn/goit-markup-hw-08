@@ -1,5 +1,7 @@
 header {
   position: relative;
+
+  border: 1px solid $text-underline-color;
 }
 
 .header-menu {
@@ -34,8 +36,7 @@ header {
 
   margin: 0 auto;
 
-  @media screen and (min-width: $tablet-width),
-    screen and (max-width: $desktop-width) {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: $tablet-width;
   }
   @media screen and (min-width: $desktop-width) {
@@ -45,7 +46,6 @@ header {
 
 .header-container {
   background-color: $main-bg-color;
-  border: 1px solid $text-underline-color;
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
@@ -153,8 +153,7 @@ nav {
 }
 
 .contacts-header-element {
-  @media screen and (min-width: $tablet-width),
-    screen and (max-width: $desktop-width) {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: block;
   }
   @media screen and (min-width: $desktop-width) {

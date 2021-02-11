@@ -10,8 +10,7 @@
   margin-left: -8px;
   margin-top: -15px;
 
-  @media screen and (min-width: $tablet-width),
-    screen and (max-width: $desktop-width) {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: $portfolio-filters-block-width;
     margin: 0 auto;
   }
@@ -19,8 +18,7 @@
     margin-left: 8px;
     margin-top: 15px;
 
-    @media screen and (min-width: $tablet-width),
-      screen and (max-width: $desktop-width) {
+    @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
       margin-top: 0;
     }
   }

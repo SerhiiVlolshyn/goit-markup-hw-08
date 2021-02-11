@@ -45,8 +45,7 @@
 
   margin-bottom: $team-cards-distance;
 
-  @media screen and (min-width: $tablet-width),
-    screen and (max-width: $desktop-width) {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
     flex-basis: calc(100% / 2 - 30px);
     margin-top: $team-cards-distance;
     margin-left: $team-cards-distance;

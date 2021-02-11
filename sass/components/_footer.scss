@@ -12,8 +12,7 @@ footer {
   }
 
   .address-and-social {
-    @media screen and (min-width: $tablet-width),
-      screen and (max-width: $desktop-width) {
+    @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
       display: flex;
       padding-left: 61px;
       padding-right: 74px;
@@ -46,8 +45,7 @@ footer {
 .footer-contacts {
   margin-bottom: $vertical-distance;
 
-  @media screen and (min-width: $tablet-width),
-    screen and (max-width: $desktop-width) {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin-bottom: 0;
   }
   @media screen and (min-width: $desktop-width) {
@@ -65,6 +63,13 @@ footer {
   line-height: 1.2;
   text-transform: uppercase;
   color: $white-color;
+}
+
+@media screen and (min-width: $desktop-width) {
+  .footer-header {
+    display: block;
+    text-align: start;
+  }
 }
 
 .social-nets-logos {
@@ -115,13 +120,12 @@ footer {
 }
 
 .footer-subscription {
-  margin-top: 5px;
-  margin-left: 93px;
-}
+  margin-top: 60px;
 
-.footer-header {
-  display: block;
-  text-align: start;
+  @media screen and (min-width: $desktop-width) {
+    margin-top: 5px;
+    margin-left: 93px;
+  }
 }
 
 .subscription-form {
@@ -145,8 +149,7 @@ footer {
     color: rgba(255, 255, 255, 0.6);
   }
 
-  @media screen and (min-width: $tablet-width),
-    screen and (max-width: $desktop-width) {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: block;
     margin: 20px auto;
   }
@@ -202,7 +205,9 @@ button[name='subscription'] {
 
 .footer-subcsription-form-and-button {
   margin-top: 20px;
-  display: flex;
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .footer-address {

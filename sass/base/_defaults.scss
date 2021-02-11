@@ -57,8 +57,7 @@ a:focus {
   padding-left: $common-site-horizontal-paddings;
   padding-right: $common-site-horizontal-paddings;
   margin: auto;
-  @media screen and (min-width: $tablet-width),
-    screen and (max-width: $desktop-width) {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: $tablet-width;
   }
   @media screen and (min-width: $desktop-width) {

@@ -32,8 +32,7 @@
     transition: color $standard-transition-options,
       border-color $standard-transition-options;
 
-    @media screen and (min-width: $tablet-width),
-      screen and (max-width: $desktop-width) {
+    @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
       width: $client-button-tablet-width;
     }
 
@@ -55,8 +54,7 @@
     margin-top: 30px;
     margin-left: 30px;
 
-    @media screen and (min-width: $tablet-width),
-      screen and (max-width: $desktop-width) {
+    @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
       flex-basis: calc(100% / 3 - 30px);
     }
 

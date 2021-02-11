@@ -67,7 +67,7 @@ a:focus {
   margin: auto;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
     width: 768px;
   }
@@ -183,6 +183,7 @@ button.inactive {
 
 header {
   position: relative;
+  border: 1px solid #ececec;
 }
 
 .header-menu {
@@ -219,7 +220,7 @@ header {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .header-container {
     width: 768px;
   }
@@ -233,7 +234,6 @@ header {
 
 .header-container {
   background-color: #ffffff;
-  border: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {
@@ -348,7 +348,7 @@ nav .current-page::after {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contacts-header-element {
     display: block;
   }
@@ -438,7 +438,7 @@ nav .current-page::after {
   }
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .banner {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg/background-image-tablet.jpg);
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/background-image-tablet.jpg);
@@ -446,7 +446,7 @@ nav .current-page::after {
   }
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px), screen and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2) {
   .banner {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg/tablet-header-x2.jpg);
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/tablet-header-x2.jpg);
@@ -536,17 +536,16 @@ nav .current-page::after {
     margin-top: -30px;
     margin-left: -30px;
   }
-}
-
-.advantages-list .advantages-list-item {
-  -ms-flex-preferred-size: calc(100% / 2 - 30px);
-      flex-basis: calc(100% / 2 - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
-@media screen and (min-width: 1200px) {
   .advantages-list .advantages-list-item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .advantages-list {
     -ms-flex-preferred-size: calc(100% / 4 - 30px);
         flex-basis: calc(100% / 4 - 30px);
   }
@@ -568,7 +567,7 @@ nav .current-page::after {
           align-items: center;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .advantages-box {
     width: 354px;
   }
@@ -610,7 +609,7 @@ nav .current-page::after {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .advantages-list-item:not(:last-child) {
     margin-bottom: 0;
   }
@@ -668,7 +667,7 @@ nav .current-page::after {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .team-member {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
@@ -809,7 +808,7 @@ nav .current-page::after {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .client-list .clients-link {
     width: 226px;
   }
@@ -838,7 +837,7 @@ nav .current-page::after {
   margin-left: 30px;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .client-list li {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
@@ -898,7 +897,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   footer .address-and-social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -936,7 +935,7 @@ footer a {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer-contacts {
     margin-bottom: 0;
   }
@@ -958,6 +957,13 @@ footer a {
   line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-header {
+    display: block;
+    text-align: start;
+  }
 }
 
 .social-nets-logos {
@@ -1021,13 +1027,14 @@ footer a {
 }
 
 .footer-subscription {
-  margin-top: 5px;
-  margin-left: 93px;
+  margin-top: 60px;
 }
 
-.footer-header {
-  display: block;
-  text-align: start;
+@media screen and (min-width: 1200px) {
+  .footer-subscription {
+    margin-top: 5px;
+    margin-left: 93px;
+  }
 }
 
 .subscription-form {
@@ -1084,7 +1091,7 @@ footer a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .subscription-form {
     display: block;
     margin: 20px auto;
@@ -1142,9 +1149,14 @@ button[name='subscription'] {
 
 .footer-subcsription-form-and-button {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subcsription-form-and-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer-address {
@@ -1623,7 +1635,7 @@ button[name='subscription'] {
   margin-top: -15px;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .filters-form {
     width: 611px;
     margin: 0 auto;
@@ -1635,7 +1647,7 @@ button[name='subscription'] {
   margin-top: 15px;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .filters-form li {
     margin-top: 0;
   }
@@ -1688,7 +1700,7 @@ button[name='subscription'] {
       flex-wrap: wrap;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .portfolio-innerheit {
     margin-top: -30px;
     margin-left: -30px;
@@ -1724,7 +1736,7 @@ button[name='subscription'] {
   width: 450px;
 }
 
-@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .portfolio-item {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
