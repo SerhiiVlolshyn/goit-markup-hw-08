@@ -2,6 +2,10 @@
   background-color: $team-bg-color;
   padding-top: $vertical-distance;
   padding-bottom: $vertical-distance;
+
+  @media screen and (min-width: $desktop-width) {
+    padding: $desktop-paddings $common-site-horizontal-paddings;
+  }
 }
 
 .section-team-title {
@@ -10,6 +14,11 @@
   line-height: 33px;
 
   text-align: center;
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team-list {
@@ -36,9 +45,17 @@
 
   margin-bottom: $team-cards-distance;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width),
+    screen and (max-width: $desktop-width) {
     flex-basis: calc(100% / 2 - 30px);
     margin-top: $team-cards-distance;
+    margin-left: $team-cards-distance;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-top: $common-margin-top;
     margin-left: $team-cards-distance;
     margin-bottom: 0;
   }

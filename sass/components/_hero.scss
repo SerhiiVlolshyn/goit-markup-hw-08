@@ -1,6 +1,10 @@
 .banner {
   padding: 118px 60px;
 
+  @media screen and (min-width: $desktop-width) {
+    padding: 201.5px 60px;
+  }
+
   background-color: $hero-bg-color;
   background-image: linear-gradient(
       0deg,
@@ -49,14 +53,15 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/bg/background-image.jpg);
-    @media screen and (min-width: $desktop-width),
-      screen and (min-device-pixel-ratio: 2) {
+    background-size: auto;
+    @media screen and (min-device-pixel-ratio: 2) {
       background-image: linear-gradient(
           0deg,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
         url(../images/bg/desktop-header-x2.jpg);
+      background-size: auto;
     }
   }
 }
@@ -71,6 +76,15 @@
   width: 360px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: $desktop-width) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: $hero-header-color;
+    width: 696px;
+  }
 }
 
 .order-button {

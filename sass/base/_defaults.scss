@@ -118,6 +118,6 @@ button {
   display: none;
 
   @media screen and (min-width: $desktop-width) {
-    display: flex;
+    display: block;
   }
 }

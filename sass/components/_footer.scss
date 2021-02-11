@@ -5,11 +5,23 @@ footer {
   padding: 60px 0;
   text-align: center;
 
+  .container {
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+
   .address-and-social {
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: $tablet-width),
+      screen and (max-width: $desktop-width) {
       display: flex;
       padding-left: 61px;
       padding-right: 74px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 
@@ -34,8 +46,12 @@ footer {
 .footer-contacts {
   margin-bottom: $vertical-distance;
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: $tablet-width),
+    screen and (max-width: $desktop-width) {
     margin-bottom: 0;
+  }
+  @media screen and (min-width: $desktop-width) {
+    text-align: start;
   }
 
   li + li {
@@ -82,6 +98,10 @@ footer {
   margin-left: auto;
   margin-top: 5px;
 
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 85px;
+  }
+
   .social-icon-item {
     width: 20px;
     height: 20px;
@@ -95,12 +115,11 @@ footer {
 }
 
 .footer-subscription {
-  margin-top: $vertical-distance;
-
+  margin-top: 5px;
+  margin-left: 93px;
   .footer-header {
     display: block;
-
-    margin-bottom: $footer-special-vertical-margin;
+    text-align: start;
   }
 }
 
@@ -125,10 +144,26 @@ footer {
     color: rgba(255, 255, 255, 0.6);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: $tablet-width),
+    screen and (max-width: $desktop-width) {
     display: block;
     margin: 20px auto;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    width: $desctop-footer-input;
+    margin: 0 auto;
+  }
+}
+
+.subscription-form-text {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 button[name='subscription'] {
@@ -148,6 +183,8 @@ button[name='subscription'] {
   color: $footer-subscribe-button-text-color;
   background-color: $buttons-bg;
 
+  margin-left: 12px;
+
   cursor: pointer;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -160,4 +197,13 @@ button[name='subscription'] {
   width: 24px;
   height: 24px;
   fill: $white-color;
+}
+
+.footer-subcsription-form-and-button {
+  margin-top: 20px;
+  display: flex;
+}
+
+.footer-address {
+  flex-wrap: nowrap;
 }
