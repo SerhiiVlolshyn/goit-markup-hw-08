@@ -1669,7 +1669,7 @@ button[name='subscription'] {
   margin-top: -15px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .filters-form {
     width: 611px;
     margin: 0 auto;
@@ -1681,7 +1681,7 @@ button[name='subscription'] {
   margin-top: 15px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .filters-form li {
     margin-top: 0;
   }
@@ -1810,6 +1810,13 @@ button[name='subscription'] {
 
 .portfolio-card h3 + p {
   margin-top: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-card {
+    width: 370px;
+    height: 110px;
+  }
 }
 
 .portfolio-image {

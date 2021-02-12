@@ -71,6 +71,11 @@
   h3 + p {
     margin-top: 4px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 370px;
+    height: 110px;
+  }
 }
 
 .portfolio-image {
