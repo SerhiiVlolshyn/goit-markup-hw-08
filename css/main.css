@@ -1734,7 +1734,7 @@ button[name='subscription'] {
       flex-wrap: wrap;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .portfolio-innerheit {
     margin-top: -30px;
     margin-left: -30px;
@@ -1810,13 +1810,6 @@ button[name='subscription'] {
 
 .portfolio-card h3 + p {
   margin-top: 4px;
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio-card {
-    width: 370px;
-    height: 110px;
-  }
 }
 
 .portfolio-image {
