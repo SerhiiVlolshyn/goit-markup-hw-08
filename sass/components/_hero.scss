@@ -1,84 +1,53 @@
 .banner {
   padding: 118px 60px;
 
+  max-width: 1600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background: {
+    image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bg/background-image.jpg);
+    color: $hero-bg-color;
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/bg/desktop-header-x2.jpg);
+  }
+
   @media screen and (min-width: $desktop-width) {
     padding: 201.5px 60px;
-  }
-
-  background-color: $hero-bg-color;
-  background-image: linear-gradient(
-      0deg,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/bg/background-image-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-
-  @media screen and (min-device-pixel-ratio: 2) {
-    background-color: $hero-bg-color;
+    height: 600px;
     background-image: linear-gradient(
-        0deg,
+        to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/bg/phone-header-x2.jpg);
-  }
+      )
+      url(../../images/bg/background-image.jpg);
 
-  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/bg/background-image-tablet.jpg);
-    background-size: 100%;
-  }
-  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) and (min-device-pixel-ratio: 2) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/bg/tablet-header-x2.jpg);
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/bg/background-image.jpg);
-    background-size: auto;
-    @media screen and (min-device-pixel-ratio: 2) {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
-          0deg,
+          to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/bg/desktop-header-x2.jpg);
-      background-size: auto;
-    }
-  }
-
-  @media screen and (min-width: 1600px) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/bg/background-image.jpg);
-    background-size: 100%;
-    @media screen and (min-device-pixel-ratio: 2) {
-      background-image: linear-gradient(
-          0deg,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/bg/desktop-header-x2.jpg);
-      background-size: 100%;
+        url(../../images/bg/desktop-header-x2.jpg);
     }
   }
 }
