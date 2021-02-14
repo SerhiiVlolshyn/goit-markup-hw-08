@@ -1489,12 +1489,8 @@ button[name='subscription'] {
   left: 0;
   -webkit-transition: 500ms cubic-bezier(0.8, 0, 0.2, 1);
   transition: 500ms cubic-bezier(0.8, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 450px) {
-  .mob-position {
-    width: 100%;
-  }
+  min-width: 100vw;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
