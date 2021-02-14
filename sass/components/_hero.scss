@@ -11,7 +11,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/bg/background-image.jpg);
+      url(../images/bg/background-image.jpg);
     color: $hero-bg-color;
     size: cover;
     repeat: no-repeat;
@@ -26,7 +26,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/bg/desktop-header-x2.jpg);
+      url(../images/bg/desktop-header-x2.jpg);
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -37,7 +37,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       )
-      url(../../images/bg/background-image.jpg);
+      url(../images/bg/background-image.jpg);
   }
 }
 
